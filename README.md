@@ -11,4 +11,3 @@ The unviversal token should be set as a Kubernetes secret for best practice.
 All the enviornment variables can be accessed on the Beszel hub.
 - The "KEY" enviornment variable can be accessed by clicking "Add System"
 - The "HUB_URL" enviornment variable is the location of the Beszel hub
-- The "TOKEN" enviornment variable gets it's value from the Kubernetes secret "token"
