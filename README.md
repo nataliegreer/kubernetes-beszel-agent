@@ -3,6 +3,11 @@
 
 A [Kubernetes daemon-set](https://github.com/nataliegreer/kubernetes-beszel-agent/blob/main/beszel-agent.yaml) that deploys beszel-agent with automatic system naming.
 
+## Create Namespace
+```
+kubectl create namespace beszel
+```
+
 ## Universal Token
 The unviversal token should be set as a Kubernetes secret for best practice.
 - You can access the universal token by going to the Beszel hub settings, Tokens & Fingerprints
