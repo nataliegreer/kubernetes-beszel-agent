@@ -1,6 +1,8 @@
 # Kubernetes Beszel-Agent
 ## A [Kubernetes daemon-set](https://github.com/nataliegreer/kubernetes-beszel-agent/blob/main/beszel-agent.yaml) that deploys one beszel-agent per node with automatic host name system naming.
 
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/b0967867-58d3-4f99-a92c-987518fc669b" />
+
 ## Universal Token
 The unviversal token should be set as a Kubernetes secret for best practice.
 - Access the universal token by going to the Beszel Hub settings, Tokens & Fingerprints
