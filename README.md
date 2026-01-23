@@ -5,10 +5,10 @@ A [Kubernetes daemon-set](https://github.com/nataliegreer/kubernetes-beszel-agen
 
 ## Universal Token
 The unviversal token should be set as a Kubernetes secret for best practice.
-- You can access the universal token by going to the Beszel Hub settings, Tokens & Fingerprints
+- You can access the universal token by going to the Beszel hub settings, Tokens & Fingerprints
   - Set the persistence to "Permanent" if you never want the universal token to expire
 ## Enviornment Variables
-All the enviornment variables can be accessed on the Beszel Hub.
+All the enviornment variables can be accessed on the Beszel hub.
 - The "KEY" enviornment variable can be accessed by clicking "Add System"
-- The "HUB_URL" enviornment variable is the location of the Beszel Hub
+- The "HUB_URL" enviornment variable is the location of the Beszel hub
 - The universal token enviornment variable is set by getting it's value from the Kubernetes secret
