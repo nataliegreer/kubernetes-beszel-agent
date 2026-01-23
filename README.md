@@ -9,11 +9,12 @@ kubectl create namespace beszel
 ```
 # Secret
 ## Universal Token
-The unviversal token should be set as a Kubernetes secret for best practice.
+The unviversal token is set as a Kubernetes secret for best practice.
 - You can access the universal token by going to the Beszel hub settings, Tokens & Fingerprints
-  - Set the persistence to "Permanent" if you never want the universal token to expire
-# Daemonset
+  - Set the persistence to "Permanent" if you want the token to last indefinitely
+ 
+# DaemonSet
 ## Enviornment Variables
 All the enviornment variables can be accessed on the Beszel hub.
 - The "KEY" enviornment variable can be accessed by clicking "Add System"
-- The "HUB_URL" enviornment variable is the location of the Beszel hub
+- The "HUB_URL" enviornment variable is the location of your Beszel hub
