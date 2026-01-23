@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: token
+  namespace: beszel
+type: Opaque
+data:
+  universal-token:
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: beszel-agent
+  namespace: beszel
+spec:
+  selector:
+    matchLabels:
+      app: beszel-agent
+  template:
+    metadata:
+      name: beszel-agent
+      labels:
+        app: beszel-agent
+    spec:
+      hostNetwork: true
+      tolerations:
+      - operator: "Exists"
+      containers:
+      - image: henrygd/beszel-agent
+        name: beszel-agent
+        env:
+        - name: KEY
+          value:
+        - name: LISTEN
+          value: '45876'
+        - name: HUB_URL
+          value:
+        - name: TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: token
+              key: universal-token
+        ports:
+        - containerPort: 45876
