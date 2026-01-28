@@ -3,10 +3,6 @@
 
 A [Kubernetes daemon-set](https://github.com/nataliegreer/kubernetes-beszel-agent/blob/main/beszel-agent.yaml) that deploys beszel-agent with automatic system naming. Just apply this daemonset and your nodes with automatically add themselves as systems to your Beszel hub.
 
-## Create Namespace
-```
-kubectl create namespace beszel
-```
 # Secret
 ## Universal Token
 The unviversal token is set as a Kubernetes secret for best practice.
