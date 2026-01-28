@@ -3,14 +3,9 @@
 
 A [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) that deploys beszel-agent with automatic system naming. Just apply this daemonset and your nodes with automatically add themselves as systems to your Beszel hub.
 
-# Secret
-## Universal Token
-The unviversal token is set as a Kubernetes secret for best practice.
-- You can access the universal token by going to the Beszel hub settings, Tokens & Fingerprints
-  - Set the persistence to "Permanent" if you want the token to last indefinitely
- 
-# DaemonSet
+You can access the universal token by going to the Beszel hub settings, Tokens & Fingerprints. Set the persistence to "Permanent" if you want the token to last indefinitely
+
 ## Enviornment Variables
 All the enviornment variables can be accessed on the Beszel hub.
-- The "KEY" enviornment variable can be accessed by clicking "Add System"
-- The "HUB_URL" enviornment variable is the location of your Beszel hub
+- `KEY`: the SSH key of your node
+- `HUB_URL`: https://your.beszel.hub
