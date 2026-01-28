@@ -28,11 +28,11 @@ spec:
         name: beszel-agent
         env:
         - name: KEY
-          value:
+          value: your.ssh.key
         - name: LISTEN
           value: '45876'
         - name: HUB_URL
-          value:
+          value: https://your.beszel.hub
         - name: TOKEN
           valueFrom:
             secretKeyRef:
