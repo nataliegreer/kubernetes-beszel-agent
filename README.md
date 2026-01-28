@@ -7,4 +7,4 @@ You can access your Beszel hubs universal token by going to the Beszel hub setti
 
 ## Enviornment Variables
 - `KEY`: the SSH key of your node
-- `HUB_URL`: https://your.beszel.hub
+- `HUB_URL`: the https of your Beszel hub
