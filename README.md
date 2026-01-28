@@ -6,6 +6,5 @@ A [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonse
 You can access your Beszel hubs universal token by going to the Beszel hub settings, -> Tokens -> Fingerprints.
 
 ## Enviornment Variables
-All the enviornment variables can be accessed on the Beszel hub.
 - `KEY`: the SSH key of your node
 - `HUB_URL`: https://your.beszel.hub
